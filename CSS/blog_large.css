@@ -9,6 +9,13 @@ body{
     text-align: center;
 }
 
+/*ツイートの並び方*/
+.blog{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 .tweet-frame{
     position: relative;
     display: flex;
