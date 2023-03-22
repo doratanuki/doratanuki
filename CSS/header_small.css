@@ -3,31 +3,18 @@ body{
 }
 
 header{
-    /*背景画像*/
-    background-image: url(../images/titech.jpeg);
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 9/16;
-    background-repeat: no-repeat;
-    /*配置*/
-    position: relative;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-title{
     /*フォント・サイズなど*/
-    font-size:40px;
-    color: rgb(255, 255, 255);
+    font-size:30px;
+    color: black;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.7);
     /*配置*/
     text-align: center;
-    padding: 0px 20px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.header-title ::after{
-    content: "ホームページ制作工事中...";
 }
