@@ -6,7 +6,7 @@
     z-index: 999;
     /*ナビのスタート位置と形状*/
 	top:-120%;
-    left:0;
+    left:0%;
 	width:100%;
     height: 100vh;/*ナビの高さ*/
 	background:#999;
@@ -38,33 +38,33 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    padding: 0%;
+    padding: 0px;
 }
 
 /*リストのレイアウト設定*/
 
 .header-menu-item{
 	list-style: none;
-    text-align: center; 
+    text-align: center;   
 }
 
 .header-menu-item a{
 	color: #333;
 	text-decoration: none;
-	padding:10px;
+	padding: 10px;
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
-	top:10px;
-	right: 10px;
+	top:15px;
+	right: 15px;
 	cursor: pointer;
     width: 50px;
     height:50px;

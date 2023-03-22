@@ -4,7 +4,7 @@ body{
 
 /*タイトル*/
 .blog-title{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
@@ -16,7 +16,7 @@ body{
     border: 2px solid rgb(70, 70, 70);
     border-radius: 10px;
     background-color: white;
-    margin:20px 10%;
+    margin:20px 7%;
     padding: 10px;
 }
 
@@ -47,21 +47,21 @@ body{
 /*ツイート内容*/
 .tweet-text{
     /*フォント*/
-    font-size: 20px;
+    font-size: 18px;
     /*テキスト位置*/
     text-align:start;
     margin: 1rem 1rem  1rem 0rem;
 }
 /*日付*/
 .tweet-day{
-    font-size: 15px;
+    font-size: 13px;
     text-align: end;
 }
 
 /*ユーザー名*/
 .tweet-user{
     /*フォント*/
-    font-size: 25px;
+    font-size: 20px;
     /*位置*/
     margin-left: 0px;
     margin-top: 10px;

@@ -1,0 +1,10 @@
+main{
+    /*背景画像*/
+    background-image: url(../images/titech.jpeg);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 9/16;
+    background-repeat: no-repeat;
+    /*配置*/
+    margin: 0px;
+}
