@@ -16,34 +16,20 @@ header{
 
 .header-title{
     /*フォント・サイズなど*/
-    font-size:40px;
+    z-index: 1;
+    font-size:45px;
+    text-shadow:3px 3px 0 #333;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color:rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     /*配置*/
     text-align: center;
-    padding: 0px 20px;
+    padding: 3px 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-.header-text{
-        /*フォント・サイズなど*/
-        font-size:15px;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        background-color: rgba(255, 255, 255, 0.7);
-        /*配置*/
-        text-align: center;
-        padding: 0px 20px;
-        width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
 }
 
 /*==========================================================*/
