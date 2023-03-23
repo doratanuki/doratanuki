@@ -78,17 +78,16 @@
 
 /*三角形*/
 .triangle-left{
-        /*位置*/
-        position: absolute;
-        left:30px;
-        bottom: 30px;
-        /*図形作成*/
-        width: 0px;
-        height: 0px;
-        border-bottom: 100px solid rgb(255, 255, 255);
-        border-right: 100px solid transparent;
+    /*位置*/
+    position: absolute;
+    left:30px;
+    bottom: 30px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-bottom: 100px solid rgb(255, 255, 255);
+    border-right: 100px solid transparent;
 }
-
 
 .career-list{
     
