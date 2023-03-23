@@ -184,3 +184,45 @@
     margin: auto;
 
 }
+
+/*=============================================*/
+
+.career2-table{
+    border: 1px solid black;
+    /*フォント*/
+    font-size: 20px;
+    color: black;
+    /*位置*/
+    position: relative;   
+}
+
+.career2-18old{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.career2-19old{
+    position: absolute;
+    top: 25%;
+    left: 100px;
+}
+
+.career2-20old{
+    position: absolute;
+    top: 50%;
+    left: 200px;
+}
+
+.career2-21old{
+    position: absolute;
+    top: 75%;
+    left: 300px;
+}
+
+/*枠線*/
+.career2-18old td, .career2-19old td, .career2-20old td, .career2-21old td {
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    padding: 10px;
+}

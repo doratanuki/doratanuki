@@ -2,12 +2,13 @@ body{
     margin: 0;
 }
 
+/*==========================================================*/
 header{
     /*背景画像*/
     background-image: url(../images/titech.jpeg);
     background-size: cover;
     width: 100%;
-    aspect-ratio: 9/16;
+    aspect-ratio: 2/3;
     background-repeat: no-repeat;
     /*配置*/
     position: relative;
@@ -19,6 +20,7 @@ header{
     color: rgb(255, 255, 255);
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
     /*配置*/
     text-align: center;
     padding: 0px 20px;
@@ -28,6 +30,20 @@ header{
     transform: translate(-50%,-50%);
 }
 
-.header-title ::after{
-    content: "ホームページ制作工事中...";
+.header-text{
+        /*フォント・サイズなど*/
+        font-size:15px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        /*配置*/
+        text-align: center;
+        padding: 0px 20px;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
 }
+
+/*==========================================================*/

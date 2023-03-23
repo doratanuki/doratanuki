@@ -4,10 +4,11 @@
     position: relative;
     background-color: black;
     padding: 10px;
+    margin: 0px 10px;
 }
 /*タイトル*/
 .profile-title{
-    margin:0px;
+    margin:0px 10px;
     padding: 10px;
     background-color: black;
     border-bottom:2px solid grey ;
@@ -22,7 +23,7 @@
     height: 200px;
     /*配置*/
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 /*プロフィールテキスト全体*/
@@ -50,28 +51,29 @@
 .triangle-right{
     /*位置*/
     position: absolute;
-    right:30px;
-    bottom: 20px;
+    right:10px;
+    bottom: 10px;
     /*図形作成*/
     width: 0px;
     height: 0px;
-    border-bottom: 80px solid white;
-    border-left: 80px solid transparent;
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
 }
 
 /*======================経歴=======================*/
 .career{
-    background-color: rgb(110, 192, 250);
+    background-color: #333;
     position: relative;
+    padding: 10px;
+    margin: 0px 10px;
 }
 /*タイトル*/
 .career-title{
-    margin:0px;
+    margin:0px 10px;
     padding: 10px;
-    background-color: none;
-    border-bottom:2px solid rgb(65, 65, 65) ;
+    border-bottom:2px solid grey ;
     /*フォント*/
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
 }
@@ -86,10 +88,10 @@
     flex-direction: column;
     /*フォント*/
     list-style: none;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
     /*配置*/
-    padding: 10px 0px 10px 20px;
+    padding: 10px 0px 10px 10px;
     margin:10px 20px 0px 20px;
     /*枠線*/
     border-left: 2px solid white;
@@ -97,42 +99,42 @@
 
 .career-list-item1,.career-list-item2,.career-list-item3,.career-list-item4{
     /*枠の上下マージン*/
-    margin: 10px 0px;
+    margin: 5px 0px;
     /*枠線*/
     border-left: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
     padding-left:10px;
-    padding-top: 10px;
-    margin-left: 0px;
 }
 
 
 /*====================趣味=====================*/
-
-
 .hobby{
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 0px 10px;
 }
 
 /*タイトル*/
 .hobby-title{
-    /*フォント*/
-    font-size: 25px;
-    /*配置*/
-    text-align: center;
-    margin: 0px;
+    margin:0px 10px;
     padding: 10px;
-    /*境界線*/
-    border-bottom: 2px solid gray;
+    border-bottom:2px solid grey ;
+    /*フォント*/
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
 }
 
+/*リスト全体*/
 .hobby-list{
+    /*配置*/
     display: flex;
     flex-direction: column;
     padding: 20px;
+    color: white;
 }
 
-/*リストの大枠*/
+/*個々のリスト*/
 .hobby-list-item{
     list-style: none;
     margin-bottom:20px ;
@@ -148,22 +150,53 @@
     margin: auto;
 }
 
-/*テキスト*/
-.hobby-list-text-all{
-    text-align: center;
-    font-size: 18px;
+/*テキスト全体*/
 
-}
 /*タイトル*/
 .hobby-list-text1{
-    font-size: 25px;
-
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0px;
 }
 /*文章*/
 .hobby-list-text2{
+    font-size: 18px;
     /*配置*/
     width: 90%;
     margin: auto;
+}
 
-
+/*====================MUSIC====================*/
+/*セクション全体*/
+.my-favorite-music{
+    background-color: #333;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+/*MY FAVORITE MUSIC*/
+.music-title{
+    margin:0px 10px;
+    padding: 10px;
+    border-bottom:2px solid grey ;
+    /*フォント*/
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+}
+/*曲名*/
+.music-name{
+    /*フォント*/
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /*配置*/
+    text-align: left;
+    padding: 20px 20px 30px 20px;
+}
+/*埋め込み動画*/
+.index-youtube-1{
+    width: 90%;
+    /*配置*/
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
