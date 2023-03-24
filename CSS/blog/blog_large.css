@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(110, 192, 255);
+}
+
+/*タイトル*/
+.blog-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*ツイートの並び方*/
+.blog{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.tweet-frame{
+    position: relative;
+    display: flex;
+    /*枠*/
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    background-color: white;
+    margin:20px 25%;
+    padding: 10px;
+}
+
+/*画像*/
+.tweet-img{
+    width: 70px;
+    height: 70px;
+    /*画像選択*/
+    background-image: url(../../images/blog/たぬきアイコン1.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    /*位置*/
+    background-position: center;
+    /*境界線*/
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 50%;
+
+}
+/*ユーザー名・ツイート・日時*/
+.tweet-text-frame{
+    /*テキスト配置*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+}
+
+/*ツイート内容*/
+.tweet-text{
+    /*フォント*/
+    font-size: 20px;
+    /*テキスト位置*/
+    text-align:start;
+    margin: 2rem;
+}
+/*日付*/
+.tweet-day{
+    font-size: 15px;
+    position: static;
+    bottom: 0px;
+    right: 0px;
+    text-align: end;
+}
+
+/*ユーザー名*/
+.tweet-user{
+    /*フォント*/
+    font-size: 30px;
+    /*位置*/
+    margin-left: 1rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    /*フォント・サイズなど*/
+    font-size:30px;
+    color: black;
+    font-weight: bold;
+    /*配置*/
+    text-align: center;
+}

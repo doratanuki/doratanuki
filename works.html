@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <!--ウィンドウサイズ-->
+            <!--～480px-->
+            <link rel="stylesheet" href="CSS/works_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/openbtn_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" href="CSS/footer_small.css" media="screen and (max-width:480px)">
+            <!--480px～1024px -->
+            <link rel="stylesheet" href="CSS/works_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/openbtn_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" href="CSS/footer.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <!-- 1024px～ -->
+            <link rel="stylesheet" href="CSS/works_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" href="CSS/header_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/openbtn_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" href="CSS/footer.css" media="screen and (min-width:1024px)">
+            <!--Video-->
+            <link rel="stylesheet" type="text/css" href="css/video.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <!--タイトル-->
+            <div class="header-title">@ta_cake_21</div>
+            <!--メニューボタン-->
+            <div class="openbtn"><span></span><span></span><span></span></div>
+            <!--メニュー-->
+            <nav class="header-menu">
+                <ul>
+                    <li class="header-menu-item"><a href="index.html">HOME</a></li>
+                    <li class="header-menu-item"><a href="profile.html">PROFILE</a></li>
+                    <li class="header-menu-item"><a href="blog.html">BLOG</a></li>
+                    <li class="header-menu-item"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        
+
+
+        <main>
+            <!--ビデオ-->
+            <div id="video-area">
+                <video id="video" poster="images/video/sunset.jpg" webkit-playsinline playsinline muted autoplay loop>
+                    <!--
+                    poster：動画ファイルが利用できない環境で代替表示される画像
+                    webkit-playsinline：iOS 9までのSafari用インライン再生指定
+                    playsinline：iOS 10以降のSafari用インライン再生指定
+                    muted：音声をミュートさせる
+                    autoplay：動画を自動再生させる
+                    loop：動画をループさせる
+                    controls：コントロールバーを表示する
+                    -->
+                    <source src="images/video/hyperspace.mp4" type="video/mp4">
+                    <p>動画を再生できる環境ではありません。</p>
+                </video>
+            </div>
+
+        </main>
+
+        <footer>
+            <nav>
+                <ul class="footer-sns-items">
+                    <li><a href="#" class="footer-sns-item"><img src="images/footer/LINE_Brand_icon.png"></a></li>
+                    <li><a href="https://twitter.com/ta_21__" target="_blank" class="footer-sns-item"><img src="images/footer/2021 Twitter logo - blue.png"></a></li>
+                    <li><a href="https://www.instagram.com/ta_cake_21/" target="_blank" class="footer-sns-item"><img src="images/footer/Instagram_Glyph_Gradient.png"></a></li>
+                </ul>
+            </nav>
+            <div class="footer-text">Created by Doratanuki (2023/3/16)</div>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="JS/common.js"></script>
+    </body>
+    
+</html>

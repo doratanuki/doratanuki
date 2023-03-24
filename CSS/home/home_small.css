@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+
+/*==========================================================*/
+header{
+    /*背景画像*/
+    background-image: url(../../images/IMG_1104.jpeg);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 9/16;
+    background-repeat: no-repeat;
+    /*配置*/
+    position: relative;
+}
+
+.header-title{
+    /*フォント・サイズなど*/
+    z-index: 1;
+    font-size:45px;
+    text-shadow:3px 3px 0 #333;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    /*配置*/
+    text-align: center;
+    padding: 3px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*==========================================================*/
+
+/*三角形上部　黒*/
+.triangle-1{
+    /*位置*/
+    position: absolute;
+    left:0px;
+    top: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-top: 300px solid rgba(0, 0, 0, 0.6);
+    border-right: 300px solid transparent;
+}
+/*三角形上部　白*/
+.triangle-2{
+    /*位置*/
+    position: absolute;
+    left:0px;
+    top: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-top: 250px solid rgba(255, 255, 255, 0.6);
+    border-right: 250px solid transparent;
+}
+
+/*三角形下部　右白*/
+.triangle-3{
+    /*位置*/
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-bottom: 250px solid rgba(255, 255, 255, 0.6);
+    border-left: 250px solid transparent;
+}
+/*三角形下部　右黒*/
+.triangle-4{
+    /*位置*/
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-bottom: 100px solid rgba(0, 0, 0, 0.6);
+    border-left: 100px solid transparent;
+}
