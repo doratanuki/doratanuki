@@ -19,7 +19,7 @@ header{
     color: black;
     font-weight: bold;
     text-shadow: 3px 3px white;
-    background-color: rgba(255, 255, 255, 0.319);
+    background-color: rgba(0, 0, 0, 0.319);
     padding: 0px 30px;
     /*配置*/
     z-index: 3;
@@ -33,34 +33,22 @@ header{
     /*位置*/
     position: absolute;
     left:0px;
-    top: 0px;
-    /*図形作成*/
-    width: 0px;
-    height: 0px;
-    border-top: 200px solid rgba(255, 255, 255, 0.2);
-    border-right: 200px solid transparent;
-}
-
-.triangle-2{
-    /*位置*/
-    position: absolute;
-    left:0px;
     bottom: 0px;
     /*図形作成*/
-    width: 0px;
+    width: 1030px;
     height: 0px;
-    border-bottom: 300px solid rgba(255, 255, 255, 0.1);
-    border-right: 300px solid transparent;
+    border-top: 100px solid rgba(0, 0, 0, 0.3);
+    border-right: 0px solid transparent;
 }
 
 .triangle-3{
     /*位置*/
     position: absolute;
-    right:0px;
+    right:100px;
     bottom: 0px;
     /*図形作成*/
-    width: 0px;
+    width: 15%;
     height: 0px;
-    border-bottom: 600px solid rgba(255, 255, 255, 0.3);
-    border-left: 600px solid transparent;
+    border-bottom: 1000px solid rgba(0, 0, 0, 0.4);
+    border-left: 0px solid transparent;
 }
