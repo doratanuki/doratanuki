@@ -1,3 +1,6 @@
+body{
+    margin: 0%;
+}
 header{
     /*背景画像*/
     background-image: url(../images/IMG_1104.jpeg);
@@ -12,10 +15,52 @@ header{
 /*タイトル*/
 .header-title{
     /*フォント・サイズなど*/
-    font-size:40px;
+    font-size:50px;
     color: black;
     font-weight: bold;
+    text-shadow: 3px 3px white;
+    background-color: rgba(255, 255, 255, 0.319);
+    padding: 0px 30px;
     /*配置*/
-    background-color: white;
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    left: 10%;
     text-align: center;
+}
+/*三角形*/
+.triangle-1{
+    /*位置*/
+    position: absolute;
+    left:0px;
+    top: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-top: 200px solid rgba(255, 255, 255, 0.2);
+    border-right: 200px solid transparent;
+}
+
+.triangle-2{
+    /*位置*/
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-bottom: 300px solid rgba(255, 255, 255, 0.1);
+    border-right: 300px solid transparent;
+}
+
+.triangle-3{
+    /*位置*/
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+    /*図形作成*/
+    width: 0px;
+    height: 0px;
+    border-bottom: 600px solid rgba(255, 255, 255, 0.3);
+    border-left: 600px solid transparent;
 }
