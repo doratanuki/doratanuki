@@ -6,23 +6,23 @@
         <meta name="viewport" content="width=device-width" />
         <!--ウィンドウサイズ-->
             <!-- ～480px -->
-            <link rel="stylesheet" href="CSS/header/header_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/header/header_small.css" media="screen and (max-width:480px)">
             <link rel="stylesheet" type="text/css" href="CSS/openbtn/openbtn_small.css"  media="screen and (max-width:480px)">
-            <link rel="stylesheet" href="CSS/profile/profile_small.css" media="screen and (max-width:480px)">
-            <link rel="stylesheet" href="CSS/footer/footer_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/profile/profile_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/footer/footer_small.css" media="screen and (max-width:480px)">
             <!-- 480px～1024px -->
-            <link rel="stylesheet" href="CSS/header/header_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/header/header_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
             <link rel="stylesheet" type="text/css" href="CSS/openbtn/openbtn_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
-            <link rel="stylesheet" href="CSS/profile/profile_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
-            <link rel="stylesheet" href="CSS/footer/footer.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/profile/profile_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/footer/footer.css" media="screen and (min-width:480px) and (max-width:1024px)">
             <!-- 1024px～ -->
-            <link rel="stylesheet" href="CSS/header/header_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/header/header_large.css" media="screen and (min-width:1024px)">
             <link rel="stylesheet" type="text/css" href="CSS/openbtn/openbtn_large.css" media="screen and (min-width:1024px)">
-            <link rel="stylesheet" href="CSS/profile/profile_large.css" media="screen and (min-width:1024px)">
-            <link rel="stylesheet" href="CSS/footer/footer.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/profile/profile_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/footer/footer.css" media="screen and (min-width:1024px)">
             <!--loading-->
-            <link rel="stylesheet" href="CSS/profile/profile_loading_small+medium.css" media="screen and (max-width:1024px)"> 
-            <link rel="stylesheet" href="CSS/profile/profile_loading_large.css" media="screen and (min-width:1024px)"> 
+            <link rel="stylesheet" type="text/css" href="CSS/profile/profile_loading_small+medium.css" media="screen and (max-width:1024px)"> 
+            <link rel="stylesheet" type="text/css" href="CSS/profile/profile_loading_large.css" media="screen and (min-width:1024px)"> 
     </head>
 
     <body>
@@ -30,7 +30,23 @@
         <aside>
             <div id="splash">
                 <div id="splash_logo">
-                    <div class="splash-text1">loading...</div>
+                    <div id="video-area">
+                        <div id="video-area">
+                            <video id="video" poster="#" webkit-playsinline playsinline muted autoplay>
+                            <!--
+                            poster：動画ファイルが利用できない環境で代替表示される画像
+                            webkit-playsinline：iOS 9までのSafari用インライン再生指定
+                            playsinline：iOS 10以降のSafari用インライン再生指定
+                            muted：音声をミュートさせる
+                            autoplay：動画を自動再生させる
+                            loop：動画をループさせる
+                            controls：コントロールバーを表示する
+                            -->
+                            <source src="images/video/hyperspace.mp4" type="video/mp4">
+                            <p>動画を再生できる環境ではありません。</p>
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
         </aside>
