@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color:#000000;
+  background:#333;
   text-align:center;
   color:#fff;
 }
@@ -20,7 +20,12 @@
   transform: translate(-50%, -50%);
 }
     
-/* fadeUpをするアイコンの動き */
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width:100px;
+}
+    
+    /* fadeUpをするアイコンの動き */
 .fadeUp{
   animation-name: fadeUpAnime;
   animation-duration:0.5s;
@@ -39,16 +44,26 @@
   transform: translateY(0);
   }
 }
+
 /*=========================追加設定=============================*/
 
-#video{
-  /*天地中央配置*/
-  position: absolute;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*縦横幅指定*/
-  width: auto; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
-  height: 100vh; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+.splash-text1{
+    /*フォント*/
+    font-size: 20px;
+    font-family: "Arial Black";
+    color: white;
+    text-align: center;
+    /*枠*/
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    margin: 0;
+
+}
+
+.splash-text2{
+    font-size: 15px;
+    font-family: "Arial";
+    color: white;
+    text-align: center;
+    margin-top: 10px;
 }
