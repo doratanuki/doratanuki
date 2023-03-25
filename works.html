@@ -3,27 +3,29 @@
     <head>
         <title>HOMEPAGE</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width">
         <!--ウィンドウサイズ-->
             <!--～480px-->
-            <link rel="stylesheet" href="CSS/works_small.css" media="screen and (max-width:480px)">
-            <link rel="stylesheet" type="text/css" href="CSS/openbtn_small.css" media="screen and (max-width:480px)">
-            <link rel="stylesheet" href="CSS/footer_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/header/header_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/openbtn/openbtn_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/works/works_large.css" media="screen and (min-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/footer/footer_small.css" media="screen and (max-width:480px)">
             <!--480px～1024px -->
-            <link rel="stylesheet" href="CSS/works_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
-            <link rel="stylesheet" type="text/css" href="CSS/openbtn_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
-            <link rel="stylesheet" href="CSS/footer.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/header/header_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/openbtn/openbtn_medium.css" media="screen and (min-width:480px) and (max-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/footer/footer.css" media="screen and (min-width:480px) and (max-width:1024px)">
             <!-- 1024px～ -->
-            <link rel="stylesheet" href="CSS/works_large.css" media="screen and (min-width:1024px)">
-            <link rel="stylesheet" href="CSS/header_large.css" media="screen and (min-width:1024px)">
-            <link rel="stylesheet" type="text/css" href="CSS/openbtn_large.css" media="screen and (min-width:1024px)">
-            <link rel="stylesheet" href="CSS/footer.css" media="screen and (min-width:1024px)">
-            <!--Video-->
-            <link rel="stylesheet" type="text/css" href="css/video.css">
+            <link rel="stylesheet" type="text/css" href="CSS/header/header_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/openbtn/openbtn_large.css" media="screen and (min-width:1024px)">
+            <link rel="stylesheet" type="text/css" href="CSS/works/works_small.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" type="text/css" href="CSS/footer/footer.css" media="screen and (min-width:1024px)">
+            <!--video--> 
+            
+            
+               
     </head>
 
     <body>
-        
         <header>
             <!--タイトル-->
             <div class="header-title">@ta_cake_21</div>
@@ -35,32 +37,45 @@
                     <li class="header-menu-item"><a href="index.html">HOME</a></li>
                     <li class="header-menu-item"><a href="profile.html">PROFILE</a></li>
                     <li class="header-menu-item"><a href="blog.html">BLOG</a></li>
-                    <li class="header-menu-item"><a href="#">CONTACT</a></li>
+                    <li class="header-menu-item"><a href="#">WORKS</a></li>
+                    <li class="header-menu-item"><a href="#">TEST-PAGE</a></li>
                 </ul>
             </nav>
+            <!--三角形-->
+            <div class="triangle-1"></div>
+            <div class="triangle-2"></div>
+            <div class="triangle-3"></div>
+            <div class="triangle-4"></div>
 
         </header>
         
 
 
         <main>
-            <!--ビデオ-->
-            <div id="video-area">
-                <video id="video" poster="images/video/sunset.jpg" webkit-playsinline playsinline muted autoplay loop>
-                    <!--
-                    poster：動画ファイルが利用できない環境で代替表示される画像
-                    webkit-playsinline：iOS 9までのSafari用インライン再生指定
-                    playsinline：iOS 10以降のSafari用インライン再生指定
-                    muted：音声をミュートさせる
-                    autoplay：動画を自動再生させる
-                    loop：動画をループさせる
-                    controls：コントロールバーを表示する
-                    -->
-                    <source src="images/video/hyperspace.mp4" type="video/mp4">
-                    <p>動画を再生できる環境ではありません。</p>
-                </video>
-            </div>
-
+            <section class="works">
+                <h2 class="works-title">MY WORKS</h2>
+                <p class="works-text">HTMLとCSSの独学で0から作成したホームページを載せています。<br>
+                    勉強して思ったことは、プログラミングとは違ってだいぶ簡単だと感じました。<br>
+                    僕の場合pythonやRといった言語を少し勉強したことがあるので、約1週間でこのホームページのデザインや機能を付けることが出来るようになりました。<br>
+                    今のところ大学の勉強がかなり大変なので制作依頼は今のところ受け付けていません。</p>
+                <nav class="works-nav">
+                    <ul class="works-ul">
+                        <il class="works-list"><a href="#">
+                            <img class="works-img" src="#"></a></il>
+                        <il class="works-list"><a href="#">
+                            <img class="works-img" src="#"></a></il>
+                        <il class="works-list"><a href="#">
+                            <img class="works-img" src="#"></a></il>
+                        <il class="works-list"><a href="#">
+                            <img class="works-img" src="#"></a></il>
+                        <il class="works-list"><a href="#">
+                            <img class="works-img" src="#"></a></il>
+                        <il class="works-list"><a href="#">
+                            <img class="works-img" src="#"></a></il>
+                    </ul>
+                </nav>
+                
+            </section>
         </main>
 
         <footer>
@@ -75,7 +90,9 @@
         </footer>
     
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="JS/common.js"></script>
+        <script src="JS/index_loading.js"></script>
+        <script src="JS/btn_menu.js"></script>
+        <script src="JS/works_img_change.js"></script>
     </body>
     
 </html>

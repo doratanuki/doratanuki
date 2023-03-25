@@ -1,0 +1,72 @@
+main{
+    margin: 0px 10px;
+    background-color:antiquewhite;
+}
+
+/*タイトル*/
+.works-title{
+    margin:0px 30px;
+    padding: 10px 0px ;
+    border-bottom:2px solid grey ;
+    /*フォント*/
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+}
+
+/*テキスト*/
+.works-text{
+    /*フォント*/
+    font-size: 15px;
+    color: white;
+    background-color: rgb(85, 110, 83);
+    /*配置*/
+    text-align: center;
+    width: calc(96% - 60px);
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.works-nav{
+    /*配置*/
+    width: 96%;
+    margin: auto;
+
+}
+
+.works-nav ul{
+    /*リストの配置*/
+    display: flex;
+    flex-wrap: wrap; /*折り返し指定*/
+    justify-content:space-around;
+    padding: 0%;
+}
+
+/*リスト*/
+.works-list{
+    list-style: none;
+    /*配置*/
+    width: calc(48% - 20px);
+    padding: 0;
+    margin: 10px;
+}
+
+/*リンク*/
+.works-list a{
+    text-decoration: none;
+    display: inline-block; /*写真とリンクサイズを一致*/
+}
+
+/*リンク上にマウスが乗った時*/
+.works-list a :hover, .works-img :hover{
+    transform: scale(1.05,1.05);
+    transition: all 0.5s;
+}
+
+/*画像*/
+.works-img{
+    /*サイズ*/
+    width: 100%;
+    aspect-ratio: 9/16;
+    /*配置*/
+}

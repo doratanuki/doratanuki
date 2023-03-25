@@ -1,48 +1,77 @@
 main{
-    background-color: aqua;
+    
+    margin: 0px 10px;
+    background-color: antiquewhite;
+    height: auto;
 }
 
 .works{
 
+
 }
 
+/*タイトル*/
 .works-title{
-    margin: auto;
+    margin:0px 30px;
+    padding: 10px 0px ;
+    border-bottom:2px solid grey ;
+    /*フォント*/
+    color: rgb(0, 0, 0);
+    font-size: 30px;
     text-align: center;
 }
 
-.works-nav{
+/*テキスト*/
+.works-text{
+    /*フォント*/
+    font-size: 15px;
+    color: white;
+    background-color: darkolivegreen;
+    /*配置*/
+    text-align: center;
+    width: calc(96% - 20px);
+    margin: 20px auto;
+}
 
+.works-nav{
+    /*配置*/
+    width: 96%;
+    margin: auto;
 }
 
 .works-nav ul{
     /*リストの配置*/
     display: flex;
     flex-wrap: wrap; /*折り返し指定*/
-    justify-content: center;
-    gap:3px;
-    border: 2px solid black;
+    justify-content:space-around;
     padding: 0%;
 }
 
+/*リスト*/
 .works-list{
     list-style: none;
-    border: 3px solid blue;
     /*配置*/
-    width: 600px;
-    padding: 10px;
+    width: calc(48% - 20px);
+    padding: 0;
+    margin: 10px;
 }
 
+/*リンク*/
 .works-list a{
     text-decoration: none;
-    display: inline-block;
-    border: 3px solid red;
+    display: inline-block; /*写真とリンクサイズを一致*/
 }
 
+/*リンク上にマウスが乗った時*/
+.works-list a :hover, .works-img :hover{
+    transform: scale(1.05,1.05);
+    transition: all 0.5s;
+}
+
+/*画像*/
 .works-img{
     /*サイズ*/
-    width: 500px;
-    aspect-ratio: 1.681/1;
+    width: 100%;
+    aspect-ratio: 9/16;
     /*配置*/
-    margin: 0%;
 }

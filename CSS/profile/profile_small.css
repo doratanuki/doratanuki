@@ -132,7 +132,7 @@ main{
     /*配置*/
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 8px;
     color: white;
 }
 
@@ -145,7 +145,7 @@ main{
 /*写真*/
 .hobby-list-item img{
     /*大きさ*/
-    width: 90%;
+    width: 95%;
     aspect-ratio: 3/2;
     /*配置*/
     display: block;
@@ -162,9 +162,10 @@ main{
 }
 /*文章*/
 .hobby-list-text2{
+    text-align: left;
     font-size: 15px;
     /*配置*/
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
