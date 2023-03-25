@@ -12,7 +12,7 @@
 }
     
 /* Loading画像中央配置　*/
-#splash_logo {
+  #splash_logo {
   width: 100%;
   position: absolute;
   top: 50%;
