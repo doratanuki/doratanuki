@@ -1,18 +1,76 @@
-function updateImageSrc() {
-    var windowWidth = window.innerWidth;
-    var imgElements = document.getElementsByClassName('works-img');
-  
-    for (var i = 0; i < imgElements.length; i++) {
-      if (windowWidth > 480) {
-        imgElements[i].src = 'images/works/pc/sample1.png';
-      } else {
-        imgElements[i].src = 'images/works/sp/titech.jpeg';
-      }
-    }
-  }
-  
-  updateImageSrc();
-  
-  window.addEventListener('resize', function() {
-    updateImageSrc();
-  });
+particlesJS("particles-js", {
+  //桜の花びらのパラメーター
+	"particles":{
+		"number":{//桜の花びらの数を定義
+			"value":100,//この数値を変更すると桜の数が増減できる
+			"density":{//密度を定義
+				"enable":true,//有効にするか
+				"value_area":1121.6780303333778//密度を設定
+			}
+		},
+		"color":{//花びらの色を定義
+			"value":"#fff"//色を白に設定
+		},
+		"shape":{//花びらの形状を定義
+			"type":"image",//形状は画像を指定
+			"stroke":{//外縁を定義
+				"width":0,
+			},
+			"image":{
+				"src":"images/flower.png",//【重要】画像を指定！桜の画像を設定してください。
+				"width":120,
+				"height":120
+			}
+		},
+		"opacity":{
+			"value":0.06409588744762158,
+			"random":true,
+			"anim":{//アニメーションの定義
+				"enable":false,
+				"speed":1,
+				"opacity_min":0.1,
+				"sync":false
+			}
+		},
+		"size":{
+			"value":8.011985930952697,
+			"random":true,//サイズをランダムに
+			"anim":{
+				"enable":false,
+				"speed":4,
+				"size_min":0.1,
+				"sync":false
+			}
+		},
+		"line_linked":{
+			"enable":false,
+		},
+		"move":{
+			"enable":true,
+			"speed":7,//この数値を小さくするとゆっくりな動きになる
+			"direction":"bottom",//右下に向かって落ちる
+			"random":true,//動きはランダムにしない
+			"straight":false,//動きをとどめない
+			"out_mode":"out",//画面の外に出るように描写
+			"bounce":false,//跳ね返りなし
+			"attract":{
+				"enable":true,
+				"rotateX":281.9177489524316,
+				"rotateY":127.670995809726
+			}
+		}
+	},
+	"interactivity":{
+		"detect_on":"canvas",
+		"events":{
+			"onhover":{
+				"enable":false,
+			},
+			"onclick":{
+				"enable":false,
+			},
+			"resize":true
+		}
+	},
+	"retina_detect":false
+});

@@ -1,7 +1,21 @@
 main{
     margin: 0px 10px;
     background-color:antiquewhite;
+    position: relative;
 }
+/*未実装*/
+.attention{
+    writing-mode: vertical-lr;
+    font-size: 150px;
+    color: yellow;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0%;
+}
+
 
 /*タイトル*/
 .works-title{

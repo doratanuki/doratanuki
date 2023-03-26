@@ -47,7 +47,7 @@ main{
 
 /*自己紹介テキスト*/
 .profile-text p{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
 }
 
@@ -163,7 +163,7 @@ main{
 /*文章*/
 .hobby-list-text2{
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     /*配置*/
     width: 95%;
     margin: auto;
