@@ -2,7 +2,7 @@ particlesJS("particles-js", {
     //桜の花びらのパラメーター
     "particles":{
         "number":{//桜の花びらの数を定義
-              "value":80,//この数値を変更すると桜の数が増減できる
+              "value":50,//この数値を変更すると桜の数が増減できる
               "density":{//密度を定義
                   "enable":true,//有効にするか
                   "value_area":1121.6780303333778//密度を設定
@@ -49,7 +49,7 @@ particlesJS("particles-js", {
               "enable":true,
               "speed":7,//この数値を小さくするとゆっくりな動きになる
               "direction":"bottom",//右下に向かって落ちる
-              "random":true,//動きはランダムにしない
+              "random":false,//動きはランダムにしない
               "straight":false,//動きをとどめない
               "out_mode":"out",//画面の外に出るように描写
               "bounce":false,//跳ね返りなし
