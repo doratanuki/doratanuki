@@ -78,9 +78,13 @@ main{
 }
 
 /*画像*/
-.works-img{
+/*SPを表示させといてPCは非表示に*/
+.works-img-sp{
     /*サイズ*/
     width: 100%;
     aspect-ratio: 9/16;
     /*配置*/
+}
+.works-img-pc{
+    display: none;
 }

@@ -1,5 +1,4 @@
-main{
-    
+main{ 
     margin: 0px 20px;
     background-color: antiquewhite;
     height: auto;
@@ -79,9 +78,13 @@ main{
 }
 
 /*画像*/
-.works-img{
+/*PCを表示させといてSPは非表示に*/
+.works-img-pc{
     /*サイズ*/
     width: 100%;
     aspect-ratio: 1.681/1;
     /*配置*/
+}
+.works-img-sp{
+    display: none;
 }

@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(110, 192, 255);
+    background-color: none;
 }
 
 /*タイトル*/
@@ -14,7 +14,6 @@ body{
     display: flex;
     flex-direction: column-reverse;
 }
-
 
 .tweet-frame{
     position: relative;
@@ -62,9 +61,6 @@ body{
 /*日付*/
 .tweet-day{
     font-size: 15px;
-    position: static;
-    bottom: 0px;
-    right: 0px;
     text-align: end;
 }
 
