@@ -68,7 +68,8 @@ main{
 /*リンク*/
 .works-list a{
     text-decoration: none;
-    display: inline-block; /*写真とリンクサイズを一致*/
+    display: block; /*写真とリンクサイズを一致*/
+    justify-content: center;
 }
 
 /*リンク上にマウスが乗った時*/
