@@ -1,6 +1,6 @@
 main{
     margin: 0px 10px;
-    background-color:antiquewhite;
+    background-color:rgb(204, 204, 204);
     position: relative;
 }
 /*未実装*/
@@ -87,4 +87,11 @@ main{
 }
 .works-img-pc{
     display: none;
+}
+
+/*説明*/
+.works-list-text{
+    text-align: center;
+    font-size: small;
+    color: black;
 }
