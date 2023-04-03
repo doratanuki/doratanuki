@@ -1,9 +1,10 @@
 body{
     margin: 0;
+    background-color: #ededed;
 }
 
 header{
-    background-color: white;
+    background-color: #ededed;
     height: 50px;
     display: flex;
     align-items: center;

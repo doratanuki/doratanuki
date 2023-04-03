@@ -1,11 +1,19 @@
 body{
-    background-color: none;
+    background-color: #ededed;
+}
+
+main{
+    padding: 0 10px;
 }
 
 /*タイトル*/
 .blog-title{
+    margin:0px 30px;
+    padding: 10px;
+    border-bottom:2px solid grey ;
+    /*フォント*/
+    color: rgb(0, 0, 0);
     font-size: 30px;
-    font-weight: bold;
     text-align: center;
 }
 
