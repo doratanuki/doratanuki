@@ -1,0 +1,44 @@
+/*===============ハンバーガーメニュー===============*/
+@media screen and (max-width:480px){
+    .header-menu{
+        width: 70%;
+        background-color: #97AAAB;
+    }
+}
+
+
+.sec1{
+    width: 100%;
+}
+
+.sec1-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sec1-ul li{
+    background-color: #fff;
+}
+
+/*リストの背景色*/
+.sec1-ul li:nth-child(odd){
+    background-color: #ccc;
+}
+
+
+.English-spelling,.Japanese-spelling{
+    padding: 20px 0;
+    /*font*/
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+
+
+/*============================================*/
+
+.hide{
+    display: none;
+}
