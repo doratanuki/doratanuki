@@ -176,7 +176,7 @@ main{
     padding: 10px;
 }
 /*MY FAVORITE MUSIC*/
-.music-title{
+.my-favorite-music-title{
     margin:0px 10px;
     padding: 10px;
     border-bottom:2px solid grey ;
@@ -185,6 +185,21 @@ main{
     font-size: 25px;
     text-align: center;
 }
+
+/*MUSIC枠*/
+.music-frame{
+    padding: 10px;
+}
+
+/*埋め込み動画*/
+.index-youtube-1{
+    width: 100%;
+    /*配置*/
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
 /*曲名*/
 .music-name{
     /*フォント*/
@@ -192,13 +207,15 @@ main{
     color: rgb(255, 255, 255);
     /*配置*/
     text-align: left;
-    padding: 20px 20px 30px 20px;
+    padding: 10px;
 }
-/*埋め込み動画*/
-.index-youtube-1{
-    width: 90%;
-    /*配置*/
-    display: block;
-    margin: auto;
-    margin-top: 20px;
+
+/*テキスト*/
+.music-text{
+    /*FONT*/
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    /*位置*/
+    margin: 0 10px;
 }
