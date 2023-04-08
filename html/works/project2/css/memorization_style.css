@@ -78,6 +78,7 @@
 
 
 .English-spelling,.Japanese-spelling{
+    height: 60px;
     padding: 20px 0;
     /*font*/
     font-size: 40px;
