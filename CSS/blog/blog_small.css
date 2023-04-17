@@ -1,8 +1,12 @@
 body{
-    background-color: #ededed;
+    background-color: #f6f6f6;
 }
 main{
     padding: 0 10px;
+    margin: 20px 20px;
+    background-color: #B5D9DB;
+    border: 3px solid #aaa;
+    border-radius: 20px;
 }
 
 /*タイトル*/
@@ -35,11 +39,12 @@ main{
 
 /*画像*/
 .tweet-img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     /*画像選択*/
-    background-image: url(../../images/blog/たぬきアイコン1.png);
-    background-size: 45px 45px;
+    background-image: url(../../images/profile/シャーロックホームズのフリー素材2.png);
+    background-color: black;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     /*位置*/
     background-position: center;
@@ -60,14 +65,14 @@ main{
 /*ツイート内容*/
 .tweet-text{
     /*フォント*/
-    font-size: 18px;
+    font-size: 16px;
     /*テキスト位置*/
     text-align:start;
     margin: 1rem 1rem  1rem 0rem;
 }
 /*日付*/
 .tweet-day{
-    font-size: 13px;
+    font-size: 11px;
     text-align: end;
 }
 
@@ -76,6 +81,5 @@ main{
     /*フォント*/
     font-size: 20px;
     /*位置*/
-    margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 7px;
 }

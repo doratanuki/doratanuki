@@ -1,15 +1,19 @@
 body{
-    background-color: #ededed;
+    background-color: #f6f6f6;
 }
 
 main{
     padding: 0 10px;
+    margin: 30px 25%;
+    border-radius: 30px;
+    background-color: #B5D9DB;
+    border: 3px solid #aaa;
 }
 
 /*タイトル*/
 .blog-title{
-    margin:0px 30px;
-    padding: 10px;
+    margin:0px 40px;
+    padding: 20px;
     border-bottom:2px solid grey ;
     /*フォント*/
     color: rgb(0, 0, 0);
@@ -30,17 +34,18 @@ main{
     border: 2px solid rgb(70, 70, 70);
     border-radius: 10px;
     background-color: white;
-    margin:20px 25%;
+    margin:20px 10%;
     padding: 10px;
 }
 
 /*画像*/
 .tweet-img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     /*画像選択*/
-    background-image: url(../../images/blog/たぬきアイコン1.png);
-    background-size: 50px 50px;
+    background-image: url(../../images/profile/シャーロックホームズのフリー素材2.png);
+    background-color: black;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     /*位置*/
     background-position: center;
@@ -55,28 +60,27 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 /*ツイート内容*/
 .tweet-text{
     /*フォント*/
-    font-size: 20px;
+    font-size: 18px;
     /*テキスト位置*/
     text-align:start;
-    margin: 2rem;
+    margin:0 0 10px 0;
 }
 /*日付*/
 .tweet-day{
-    font-size: 15px;
+    font-size: 13px;
     text-align: end;
 }
 
 /*ユーザー名*/
 .tweet-user{
     /*フォント*/
-    font-size: 30px;
+    font-size: 23px;
     /*位置*/
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin: 10px 0;
 }

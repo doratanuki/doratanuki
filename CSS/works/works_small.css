@@ -1,6 +1,6 @@
 main{
-    margin: 0px 10px;
-    background-color:rgb(204, 204, 204);
+    margin: 20px 10px;
+    background-color:#ccc;
     position: relative;
 }
 /*未実装*/
@@ -33,7 +33,8 @@ main{
     /*フォント*/
     font-size: 15px;
     color: white;
-    background-color: rgb(85, 110, 83);
+    background-color: rgb(120, 155, 118);
+    border-radius: 20px;
     /*配置*/
     text-align: center;
     width: calc(96% - 60px);

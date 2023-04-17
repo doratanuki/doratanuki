@@ -1,27 +1,12 @@
 main{ 
-    margin: 0px 20px;
-    background-color: antiquewhite;
+    margin: 20px 50px;
+    background-color: #ddd;
     height: auto;
 }
 
-/*未実装*/
-.attention{
-    width: 100%;
-    font-size: 200px;
-    text-align: center;
-    color: yellow;
-    background-color: brown;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: 0%;
-}
-
-
 /*タイトル*/
 .works-title{
-    margin:0px 30px;
+    margin:0px 20%;
     padding: 10px 0px ;
     border-bottom:2px solid grey ;
     /*フォント*/
@@ -34,8 +19,9 @@ main{
 .works-text{
     /*フォント*/
     font-size: 20px;
-    color: white;
-    background-color: darkolivegreen;
+    background-color: rgb(179, 217, 113);
+    padding: 20px 0;
+    border-radius: 20px;
     /*配置*/
     text-align: center;
     width: calc(90% - 20px);

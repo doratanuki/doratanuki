@@ -1,10 +1,12 @@
 body{
     margin: 0;
-    background-color: #ededed;
+    padding: 0;
 }
 
 header{
-    background-color: #ededed;
+    position: relative;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     height: 70px;
     display: flex;
     align-items: center;
@@ -13,7 +15,7 @@ header{
 
 .header-title{
     /*フォント・サイズなど*/
-    font-size:40px;
+    font-size:30px;
     color: black;
     font-weight: bold;
     /*配置*/
