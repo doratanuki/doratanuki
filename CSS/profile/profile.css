@@ -1,12 +1,12 @@
 main{
     background-color: #ccc;
-
 }
 
 .section-title{
     margin:0px 30px;
     padding: 10px 0px ;
-    border-bottom:2px solid #ccc ;
+    border-bottom: 2px solid #ccc ;
+    border-left: 10px solid white;
     /*フォント*/
     color: rgb(255, 255, 255);
     text-align: center;
@@ -23,7 +23,7 @@ main{
     .section-title{
         font-size: 25px;
         margin: 0 30px;
-        padding: 0 0 10px;
+        padding: 0 0 5px;
     }
 }
 @media screen and (min-width:481px) and (max-width:1024px) {
@@ -36,7 +36,7 @@ main{
     .section-title{
         font-size: 30px;
         margin: 0 30px;
-        padding: 0 0 20px;
+        padding: 0 0 10px;
     }
 }
 @media screen and (min-width:1025px) {
@@ -49,7 +49,7 @@ main{
     .section-title{
         font-size: 30px;
         margin: 0 30px;
-        padding: 0px 0 20px;
+        padding: 0 0 10px;
     }
 }
 
@@ -417,15 +417,15 @@ main{
         padding: 10px 0px 10px 10px;
         margin:10px 20px 0px 20px;
         /*枠線*/
-        border-left: 2px solid white;
+        border-left: 2px solid #ccc;
     }
     
     .career-list-item{
         /*枠の上下マージン*/
         margin: 5px 0px;
         /*枠線*/
-        border-left: 2px solid rgb(255, 255, 255);
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         padding-left:10px;
     }
 }
@@ -436,15 +436,15 @@ main{
         padding: 10px 0px 10px 20px;
         margin:10px 40px 0px 40px;
         /*枠線*/
-        border-left: 2px solid white;
+        border-left: 2px solid #ccc;
     }
     
     .career-list-item{
         /*枠の上下マージン*/
         margin: 10px 0px;
         /*枠線*/
-        border-left: 2px solid rgb(255, 255, 255);
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         padding-left:10px;
         padding-top: 10px;
         margin-left: 0px;
@@ -462,8 +462,8 @@ main{
         /*枠の上下マージン*/
         margin: 10px 0px;
         /*枠線*/
-        border-left: 2px solid gray;
-        border-bottom: 2px solid  gray;
+        border-left: 2px solid #CCC;
+        border-bottom: 2px solid  #ccc;
         padding-left:20px;
         padding-top: 10px;
         margin-left: 0px;
