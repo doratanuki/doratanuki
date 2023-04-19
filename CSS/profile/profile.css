@@ -414,8 +414,8 @@ main{
     .career-list{
         font-size: 13px;
         /*配置*/
-        padding: 10px 0px 10px 10px;
-        margin:10px 20px 0px 20px;
+        padding: 10px 0px 10px 20px;
+        margin:10px 20px 0px 10px;
         /*枠線*/
         border-left: 2px solid #ccc;
     }
