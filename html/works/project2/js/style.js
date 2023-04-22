@@ -1,13 +1,13 @@
 //開閉
 $(function(){
     $(document).on('click', '.close-text-input', function(){
-        $(".input-frame").hide();
+        $(".input-frame").slideUp(600);
         $(this).addClass("open-text-input").removeClass("close-text-input");
         $(this).text("入力フォームを開く");
     });
 
     $(document).on('click', '.open-text-input', function(){
-        $(".input-frame").show();
+        $(".input-frame").slideDown(600);
         $(this).addClass("close-text-input").removeClass("open-text-input");
         $(this).text("入力フォームを閉じる");
     });
