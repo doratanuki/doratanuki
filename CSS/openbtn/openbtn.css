@@ -24,15 +24,15 @@
 
 
 .openbtn span:nth-of-type(1) {
-	top:26%;	
+	top:32%;	
 }
 
 .openbtn span:nth-of-type(2) {
-	top:38%;
+	top:44%;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:50%;
+	top:56%;
 }
 
 .openbtn span:nth-of-type(3)::after {
@@ -50,7 +50,7 @@
 /*===========activeクラス付与============*/
 
 .openbtn.active span:nth-of-type(1) {
-    top: 38%;
+    top: 44%;
     transform: translate(-50%,-50%) rotate(-45deg);
     width: 36%;
 }
@@ -60,7 +60,7 @@
 }
 
 .openbtn.active span:nth-of-type(3){
-    top: 38%;
+    top: 44%;
     transform: translate(-50%,-50%) rotate(45deg);
     width: 36%;
 }
@@ -130,7 +130,7 @@
     /*ボタン全体の大きさ*/
     .openbtn{
         top: 0;
-        left: 0;
+        left: 5px;
         width: 50px;
         height: 50px;
     }
