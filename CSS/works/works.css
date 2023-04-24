@@ -11,9 +11,9 @@ main{
 
 /*タイトル*/
 .works-title{
-    padding: 15px 0px ;
-    border-bottom: 5px solid #A1C4A6 ;
-    border-left: 30px solid #A1C4A6;
+    padding: 5px 0px ;
+    border-bottom: 3px solid #A1C4A6 ;
+    border-left: 10px solid #A1C4A6;
     /*フォント*/
     color: #000000;
     text-align: center;
@@ -35,7 +35,7 @@ main{
         margin:20px 10px;
     }
     .works-title{
-        margin:0px 30px;
+        margin:0px 20px;
         font-size: 25px;
     }
     .works-text{
