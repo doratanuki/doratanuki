@@ -48,6 +48,12 @@ main{
     padding: 0 10px;
 }
 
+.explanation{
+    text-align: center;
+    background-color: azure;
+    padding: 20px;
+}
+
 .option{
     position: relative;
     padding-top: 20px;

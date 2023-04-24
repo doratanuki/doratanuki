@@ -13,10 +13,14 @@ function add_input_text(){
 
     for (let i = 0; i <= $(".input-frame-item").length; i++){
       //入力部
+      $(`.input-frame-item:nth-of-type(${i})`).find(".English-spelling-input").attr('id',`English-spelling-input${i}`);
       $(`.input-frame-item:nth-of-type(${i})`).find(".English-spelling-input").addClass(`English-spelling-input${i}`);
+      $(`.input-frame-item:nth-of-type(${i})`).find(".Japanese-spelling-input").attr('id',`Japanese-spelling-input${i}`);
       $(`.input-frame-item:nth-of-type(${i})`).find(".Japanese-spelling-input").addClass(`Japanese-spelling-input${i}`);
       //表示部
+      $(`.frames:nth-of-type(${i})`).attr('id',`frames${i}`);
       $(`.frames:nth-of-type(${i})`).find(".English-spelling").addClass(`English-spelling${i}`);
+      $(`.frames:nth-of-type(${i})`).attr('id',`frames${i}`);
       $(`.frames:nth-of-type(${i})`).find(".Japanese-spelling").addClass(`Japanese-spelling${i}`);
     }
 }
@@ -26,8 +30,9 @@ function add_input_text(){
 //===============================
 
 function delete_input_text(){
+  var num = $(".input-frame-item").length
   $(".input-frame-item:last-of-type").remove()
-  $(".frames:last-of-type").remove()
+  $(`#frames${num}`).remove()
 }
 
 //===============================
@@ -156,6 +161,7 @@ $(function(){
     input_text();
     English();
     change_words();
+    delete_words();
   });
   $(".btn-delete").on("click",function(){
     delete_input_text();

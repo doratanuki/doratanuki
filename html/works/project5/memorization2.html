@@ -26,6 +26,11 @@
         </header>
 
         <main>
+            <p class="explanation">単語を入力すると下の枠に反映されます。<br>
+                単語カードは追加・削除が可能です。<br>
+                表示言語ではすべてのカードの選択言語が表示されます。<br>
+            ランダムボタンでカードはランダムに並びます。<br>
+            カードは左にスワイプすることで削除出来ます。</p>
             <section class="option">
                 <div class="open-close-frame">
                     <!--単語入力-->
@@ -34,19 +39,19 @@
                         <div class="input-frame">
                             <div class="input-frame-item">
                                 <div>
-                                    <label class="textA">英単語1：<input type="text" class="English-spelling-input English-spelling-input1">
+                                    <label class="textA">英単語1：<input type="text" id="English-spelling-input1" class="English-spelling-input English-spelling-input1">
                                     </label>
                                 </div>
                                 <div>
-                                    <label class="textB">日本語1：<input type="text" class="Japanese-spelling-input Japanese-spelling-input1"></label>
+                                    <label class="textB">日本語1：<input type="text" id="Japanese-spelling-input1" class="Japanese-spelling-input Japanese-spelling-input1"></label>
                                 </div>
                             </div>
                             <div class="input-frame-item">
                                 <div>
-                                    <label class="textA">英単語2：<input type="text" class="English-spelling-input English-spelling-input2"></label>
+                                    <label class="textA">英単語2：<input type="text" id="English-spelling-input2" class="English-spelling-input English-spelling-input2"></label>
                                 </div>
                                 <div>
-                                    <label class="textB">日本語2：<input type="text" class="Japanese-spelling-input Japanese-spelling-input2"></label>
+                                    <label class="textB">日本語2：<input type="text" id="Japanese-spelling-input2" class="Japanese-spelling-input Japanese-spelling-input2"></label>
                                 </div>
                             </div>
                         </div>
@@ -79,11 +84,11 @@
             
             <section class="sec1">
                 <table class="sec1-table">
-                    <tr class="frames">
+                    <tr id="frames1" class="frames">
                         <td class="words English-spelling English-spelling1">ENGLISH1</td>
                         <td class="words Japanese-spelling Japanese-spelling1">日本語1</td>
                     </tr>
-                    <tr class="frames">
+                    <tr id="frames2" class="frames">
                         <td class="words English-spelling English-spelling2">ENGLISH2</td>
                         <td class="words Japanese-spelling Japanese-spelling2">日本語2</td>
                     </tr>
