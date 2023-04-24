@@ -15,8 +15,8 @@
 /*======================*/
 .sec1 {
   width: 100%;
-  height: 100vh;
-  margin: 0 auto;
+  height: 80%;
+  margin-top: 20px;
   position: relative;
 }
 .sec1-img-list .slick-slide {
