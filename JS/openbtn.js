@@ -3,7 +3,7 @@ $(function(){
         $(this).toggleClass('active');
         $(".open-menu").toggleClass('panelactive');
         $(".open-menu-background").toggleClass('panelactive');
-        $(".open-menu-background").toggle();
+        $(".open-menu-background").fadeToggle();
 
         if ($(".openbtn").hasClass('active')) {
             $(".open-menu-background").on("click",function(){
