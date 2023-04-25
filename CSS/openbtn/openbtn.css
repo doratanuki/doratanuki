@@ -1,11 +1,13 @@
 @charset "utf-8";
-/*==================================================
-　5-2-4 MENUがCLOSEに
+/*================================
+            MENUがCLOSEに
 ===================================*/
 
 /*ボタン外側*/
 .openbtn{
 	position: fixed;
+    top: 0;
+    left: 0;
 	cursor: pointer;
     z-index: 1000;
 }
@@ -24,15 +26,15 @@
 
 
 .openbtn span:nth-of-type(1) {
-	top:32%;	
+	top:26%;	
 }
 
 .openbtn span:nth-of-type(2) {
-	top:44%;
+	top:38%;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:56%;
+	top:50%;
 }
 
 .openbtn span:nth-of-type(3)::after {
@@ -47,10 +49,12 @@
 }
 
 
-/*===========activeクラス付与============*/
+/*==========================================
+                activeクラス付与
+============================================*/
 
 .openbtn.active span:nth-of-type(1) {
-    top: 44%;
+    top: 38%;
     transform: translate(-50%,-50%) rotate(-45deg);
     width: 36%;
 }
@@ -60,7 +64,7 @@
 }
 
 .openbtn.active span:nth-of-type(3){
-    top: 44%;
+    top: 38%;
     transform: translate(-50%,-50%) rotate(45deg);
     width: 36%;
 }
@@ -72,19 +76,27 @@
 }
 
 /*=========================================
-開いた時の画面
+                開いた時の画面
 =============================================*/
+.open-menu-background{
+    display: none;
+    position:fixed;
+    z-index: 998;
+	top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+}
 
-
-.header-menu{
+.open-menu{
     position:fixed;
     z-index: 999;
     /*ナビのスタート位置と形状*/
 	top:0%;
     left:-100%;
     height: 100%;
-	background-color:#bbbbbb;
-    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.4);
+	background-color:#9ab2cc;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.6);
     /*動き*/
 	transition: all 0.6s;
 }
@@ -92,14 +104,14 @@
 
 /*アクティブクラスがついたら位置を0に*/
 /*ナビの数が増えた場合縦スクロール*/
-.header-menu.panelactive{
+.open-menu.panelactive{
     left: 0;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 
 /*ナビゲーション*/
-.header-menu ul {
+.open-menu ul {
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
@@ -110,12 +122,12 @@
 }
 
 /*リストのレイアウト設定*/
-.header-menu-item{
+.open-menu-item{
 	list-style: none;
     text-align: center;   
 }
 
-.header-menu-item a{
+.open-menu-item a{
 	color: #333333;
 	text-decoration: none;
 	padding: 10px;
@@ -129,8 +141,6 @@
 @media screen and (max-width:480px){
     /*ボタン全体の大きさ*/
     .openbtn{
-        top: 0;
-        left: 5px;
         width: 50px;
         height: 50px;
     }
@@ -143,11 +153,11 @@
         left:5px;
     }
     /*メニュー*/
-    .header-menu{
+    .open-menu{
         width: 60%;
     }
-    .header-menu-item a{
-        font-size: 18px;
+    .open-menu-item a{
+        font-size: 20px;
     }
 }
 @media screen and (min-width:481px) and (max-width:1024px){
@@ -164,19 +174,19 @@
         top: 7px;
         left:7px;
     }
-    .header-menu{
+    .open-menu{
         width: 40%;
     }
-    .header-menu-item a{
-        font-size: 20px;
+    .open-menu-item a{
+        font-size: 22px;
     }
 }
 @media screen and (min-width:1025px){
     .openbtn{
-        top: 15px;
-        left: 5px;
-        width: 70px;
-        height: 70px;
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
     }
     .openbtn span:nth-of-type(3)::after {
         font-size: 0.8rem;
@@ -185,10 +195,10 @@
         top:8px;
         left:8px;
     }
-    .header-menu{
+    .open-menu{
         width: 30%;
     }
-    .header-menu-item a{
-        font-size: 22px;
+    .open-menu-item a{
+        font-size: 24px;
     }
 }

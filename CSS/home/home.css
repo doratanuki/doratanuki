@@ -92,6 +92,10 @@ header{
                     481px~1024px
 ================================================*/
 @media screen and (min-width:481px) and (max-width:1024px){
+    .open-menu{
+        background-color: #d7af92;
+    }
+
     header{
         /*背景画像*/
         background-image: url(../../images/IMG_1104.jpeg);
@@ -121,7 +125,6 @@ header{
                     1025px~
 ================================================*/
 @media screen and (min-width:1025px) {
-        
     header{
         /*背景画像*/
         background-image: url(../../images/IMG_1104.jpeg);
@@ -139,7 +142,7 @@ header{
         left: 30px;
     }
 
-    .header-menu{
+    .open-menu{
         padding: 0px;
         /*配置*/
         position: absolute;
@@ -148,18 +151,18 @@ header{
 
     }
 
-    .header-menu ul{
+    .open-menu ul{
         list-style: none;
         padding: 0px;
         display: flex;
     }
 
-    .header-menu-item{
+    .open-menu-item{
         text-align: center;
         padding: 10px;
     }
 
-    .header-menu-item a{
+    .open-menu-item a{
         /*フォント設定*/
         text-decoration: none;
         color: black;

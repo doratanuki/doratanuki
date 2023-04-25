@@ -1,6 +1,11 @@
 body{
     background-color: #A1C4A6;
 }
+
+.open-menu{
+    background-color: #A1C4A6;
+}
+
 main{
     margin: 20px 10px;
     background-color: #eee;

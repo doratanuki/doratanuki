@@ -2,6 +2,10 @@ body{
     background-color: #f6f6f6;
 }
 
+.open-menu{
+    background-color: #B5D9DB;
+}
+
 main{
     padding: 0 10px;
     background-color: #B5D9DB;

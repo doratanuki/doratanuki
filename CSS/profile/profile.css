@@ -2,6 +2,10 @@ main{
     background-color: #ccc;
 }
 
+.open-menu{
+    background-color: #ccc;
+}
+
 .section-title{
     margin:0px 30px;
     padding: 10px 0px ;
@@ -41,7 +45,7 @@ main{
 }
 @media screen and (min-width:1025px) {
     main{
-        padding: 20px 250px;
+        padding: 20px 10%;
     }
     section{
         padding: 20px;
@@ -166,9 +170,9 @@ main{
 
     /*プロフィール写真*/
     .profile img{
-        width:300px;
-        height: 300px;
-        margin: 20px;
+        width:200px;
+        height: 200px;
+        margin: auto 0 auto 30px;
     }
     /*テキスト全体*/
     .profile-text{
