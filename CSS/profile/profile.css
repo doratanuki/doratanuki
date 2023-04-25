@@ -18,6 +18,12 @@ main{
 }
 
 @media screen and (max-width:480px) {
+    .openbtn span{
+        background-color: #aaa;
+    }
+    .openbtn span:nth-of-type(3)::after {
+        color: #aaa;
+    }
     main{
         padding: 20px 10px;
     }
