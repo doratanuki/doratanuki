@@ -20,7 +20,7 @@
     transform: translate(-50%,-50%);
     left: 50%;
     height: 2px;
-	background: #000;
+	background-color: #000;
   	width: 44%;
   }
 
@@ -86,11 +86,10 @@
     left:0;
     width: 100vw;
     height: 100vh;
-    
 }
 
 .open-menu-background.panelactive{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .open-menu{
