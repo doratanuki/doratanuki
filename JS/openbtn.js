@@ -2,14 +2,15 @@ $(function(){
     $(".openbtn").on("click",function(){
         $(this).toggleClass('active');
         $(".open-menu").toggleClass('panelactive');
-        $(".open-menu-background").toggle()
+        $(".open-menu-background").toggleClass('panelactive');
+        $(".open-menu-background").toggle();
 
         if ($(".openbtn").hasClass('active')) {
             $(".open-menu-background").on("click",function(){
                 $(".openbtn").removeClass('active');
                 $(".open-menu").removeClass('panelactive');
-                $(".open-menu-background").hide()
-            })
+                $(".open-menu-background").hide();
+            });
         }
     });
 
