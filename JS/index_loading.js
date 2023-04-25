@@ -1,6 +1,6 @@
-//ローディング画面
-//logoの表示
 $(window).on('load',function(){
-    $("#splash").delay(1300).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    $("#splash_logo").delay(1000).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-  });
+    $("#loading").delay(2000).fadeOut('slow');
+    $("#loading-logo img").delay(1800).animate({width : '180px'},1000);
+    $("#loading-text").animate({left : '150%'},3000);
+});
+
