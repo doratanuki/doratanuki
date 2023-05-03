@@ -6,8 +6,6 @@
 /*ボタン外側*/
 .openbtn{
 	position: fixed;
-    top: 0;
-    left: 0;
 	cursor: pointer;
     z-index: 1000;
 }
@@ -145,6 +143,8 @@
 @media screen and (max-width:480px){
     /*ボタン全体の大きさ*/
     .openbtn{
+        top: 0px;
+        left: 5px;
         width: 50px;
         height: 50px;
     }
