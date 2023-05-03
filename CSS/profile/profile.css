@@ -20,10 +20,10 @@ main{
 
 @media screen and (max-width:480px) {
     .openbtn span{
-        background-color: #aaa;
+        background-color: #666;
     }
     .openbtn span:nth-of-type(3)::after {
-        color: #aaa;
+        color: #666;
     }
     main{
         padding: 20px 10px;
@@ -59,7 +59,7 @@ main{
     }
     .section-title{
         font-size: 30px;
-        margin: 0 30px;
+        margin: 0 200px;
         padding: 0 0 10px;
     }
 }
@@ -473,7 +473,7 @@ main{
         /*枠の上下マージン*/
         margin: 10px 0px;
         /*枠線*/
-        border-left: 2px solid #CCC;
+        border-left: 10px solid #CCC;
         border-bottom: 2px solid  #ccc;
         padding-left:20px;
         padding-top: 10px;
