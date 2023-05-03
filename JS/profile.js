@@ -1,27 +1,46 @@
 function fadeAnime(){
-
-    $(".hobby").each(function(){
-        var elemPos = $(this).offset().top-50;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if(scroll >= elemPos - windowHeight){
+    $(".music-frame1").each(function(){
+        var Offset = $(this).offset().top;
+        var ScrollTop = $(window).scrollTop();
+        var WindowHeight = $(window).height();
+        if(Offset - 50 <= ScrollTop + WindowHeight){
             $(this).addClass('fadeUp');
         }else{
             $(this).removeClass('fadeUp');
         }
     });
-
-    $(".hobby").each(function(){
-        var elemPos = $(this).offset().top-50;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if(scroll >= elemPos - windowHeight){
-            $(this).addClass('fadeDown');
+    $(".music-frame2").each(function(){
+        var Offset = $(this).offset().top;
+        var ScrollTop = $(window).scrollTop();
+        var WindowHeight = $(window).height();
+        if(Offset - 50 <= ScrollTop + WindowHeight){
+            $(this).addClass('fadeUp');
         }else{
-            $(this).removeClass('fadeDown');
+            $(this).removeClass('fadeUp');
         }
     });
-
+    for(let i = 1;i <= 3; i++){
+        $(`.hobby-list-item:nth-of-type(${i})`).each(function(){
+        var Offset = $(this).offset().top;
+        var ScrollTop = $(window).scrollTop();
+        var WindowHeight = $(window).height();
+        if(Offset - 50 <= ScrollTop + WindowHeight){
+            $(this).addClass('fadeUp');
+        }else{
+            $(this).removeClass('fadeUp');
+        }
+    });
+    }
+    $(".career-list-all").each(function(){
+        var Offset = $(this).offset().top;
+        var ScrollTop = $(window).scrollTop();
+        var WindowHeight = $(window).height();
+        if(Offset - 50 <= ScrollTop + WindowHeight){
+            $(this).addClass('fadeUp');
+        }else{
+            $(this).removeClass('fadeUp');
+        }
+    });
 }
 
 $(window).scroll(function(){
