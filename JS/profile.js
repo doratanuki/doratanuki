@@ -3,7 +3,7 @@ function fadeAnime(){
         var Offset = $(this).offset().top;
         var ScrollTop = $(window).scrollTop();
         var WindowHeight = $(window).height();
-        if(Offset - 50 <= ScrollTop + WindowHeight){
+        if(Offset - 100 <= ScrollTop + WindowHeight){
             $(this).addClass('fadeUp');
         }else{
             $(this).removeClass('fadeUp');
@@ -13,7 +13,7 @@ function fadeAnime(){
         var Offset = $(this).offset().top;
         var ScrollTop = $(window).scrollTop();
         var WindowHeight = $(window).height();
-        if(Offset - 50 <= ScrollTop + WindowHeight){
+        if(Offset - 100 <= ScrollTop + WindowHeight){
             $(this).addClass('fadeUp');
         }else{
             $(this).removeClass('fadeUp');
@@ -24,7 +24,7 @@ function fadeAnime(){
         var Offset = $(this).offset().top;
         var ScrollTop = $(window).scrollTop();
         var WindowHeight = $(window).height();
-        if(Offset - 50 <= ScrollTop + WindowHeight){
+        if(Offset - 100 <= ScrollTop + WindowHeight){
             $(this).addClass('fadeUp');
         }else{
             $(this).removeClass('fadeUp');
@@ -35,7 +35,7 @@ function fadeAnime(){
         var Offset = $(this).offset().top;
         var ScrollTop = $(window).scrollTop();
         var WindowHeight = $(window).height();
-        if(Offset - 50 <= ScrollTop + WindowHeight){
+        if(Offset - 100 <= ScrollTop + WindowHeight){
             $(this).addClass('fadeUp');
         }else{
             $(this).removeClass('fadeUp');
