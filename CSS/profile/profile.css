@@ -107,6 +107,7 @@ section{
 .music-name{
     font-weight: 550;
     text-align: center;
+    margin: 10px 0;
 }
 
 .music-text{
