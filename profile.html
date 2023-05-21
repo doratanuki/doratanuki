@@ -10,11 +10,10 @@
         <link rel="stylesheet" type="text/css" href="CSS/profile/profile.css">
         <link rel="stylesheet" type="text/css" href="CSS/footer/footer.css">
         <link rel="stylesheet" type="text/css" href="CSS/fadeup.css">
+        <link rel="stylesheet" type="text/css" href="CSS/profile/slick.css">
+        <link rel="stylesheet" type="text/css" href="CSS/profile/slick_style.css">
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="JS/openbtn.js"></script>
-        <script src="JS/profile_loading.js"></script>
-        <script src="JS/profile.js"></script>
+
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CLRM8DB34"></script>
@@ -25,29 +24,9 @@
         gtag('config', 'G-7CLRM8DB34');
         </script>
 
-</head>
+    </head>
 
     <body>
-        <!--ローディング画面-->
-        <aside>
-            <div id="splash">
-                <video id="video" preload webkit-playsinline playsinline muted autoplay disablepictureinpicture>
-                    <!--
-                    poster：動画ファイルが利用できない環境で代替表示される画像
-                    webkit-playsinline：iOS 9までのSafari用インライン再生指定
-                    playsinline：iOS 10以降のSafari用インライン再生指定
-                    muted：音声をミュートさせる
-                    autoplay：動画を自動再生させる
-                    loop：動画をループさせる
-                    controls：コントロールバーを表示する
-                    disablepictureinpicture：
-                    -->
-                    <source src="images/video/hyperspace.mp4" type="video/mp4">
-                    <p>動画を再生できる環境ではありません。</p>
-                </video>
-            </div>
-        </aside>
-
         <header>
             <div class="header-title">@ta_cake_21</div>
             <div class="openbtn"><span></span><span></span><span></span></div>
@@ -60,99 +39,73 @@
                     <li class="open-menu-item"><a href="works.html">WORKS</a></li>
                 </ul>
             </nav>
-            
-
         </header>
-        
-
 
         <main>
-            <section class="profile">
-                <h2 class="section-title">PROFILE</h2>
-                <div class="profile-img-text">
-                    <img src="images/profile/シャーロックホームズのフリー素材2.png">
-                    <div class="profile-text">
-                        <h3>TAKEKI</h3>
-                        <p>東京工業大学在学<br>
-                            2023年3月からHTML・css・javascriptの独学勉強に取り組んでいます。<br>
-                            勉強の記録かつ、作成したサイトやコンテンツを公開・保存するためにサイト公開しました。<br>
-                            あくまで勉強として作成しているのでコンテンツ内容には統一感がありません。
+            <section class="musics">
+                    <div class="text-all">
+                        <h4 class="section-title">MUSICS</h4>
+                        <p class="text">
+                                好きな歌手はVaundy、Saucy Dog、ReoNa、SEKAI NO OWARIです。
+                                ピアノでこれらの好きな曲を適当に弾いていて、大学にあるストリートピアノでもたまに弾いています。
+                                最近は電子ドラムやってみたいです。
                         </p>
                     </div>
-                    <div class="triangle-right"></div>
-                </div>
-                
-            </section>
-            
-            <section class="my-favorite-music">
-                <h2 class="section-title">My Favorite Musics</h2>
-                <div class="music-frame music-frame1"> 
-                    <iframe class="youtube" width="auto" height="220" src="https://www.youtube-nocookie.com/embed/Dt1KumWl2NI"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                    <div class="music-name">ReoNa『ライフ・イズ・ビューティフォー』</div>
-                    <p class="music-text">Reonaさんの他の曲とは少し違く、明るい曲となっていて聞くと元気が出ます。</p>
-                </div>
-                <div class="music-frame music-frame2"> 
-                    <iframe class="youtube" width="auto" height="220" src="https://www.youtube.com/embed/sAuEeM_6zpk" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen></iframe>
-                    <div class="music-name">YOASOBI『あの夢をなぞって』</div>
-                    <p class="music-text">大学入試時にこれをリピートでずっと聞いていました。おかげで合格できたので僕にとって最高の応援ソングです。</p>
-                </div>
+
+
+                    <div class="reccomend">
+                        <h3>RECCOMEND</h3>
+                        <ul class="slider">
+                            <li>
+                                <div class="music-frame music-frame1"> 
+                                    <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/Dt1KumWl2NI"
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                    <h4 class="music-name">ReoNa<br>『ライフ・イズ・ビューティフォー』</h4>
+                                    <p class="music-text">Reonaさんの他の曲とは少し違く、明るい曲となっていて聞くと元気が出ます。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="music-frame music-frame2"> 
+                                    <iframe class="youtube" src="https://www.youtube.com/embed/U8pJgoOhiDs" 
+                                        title="YouTube video player" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <h4 class="music-name">Saucy Dog<br>『今更だって僕は言うかな』</h4>
+                                    <p class="music-text">ピアノでよく弾いています。歌詞も結構好きです。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="music-frame music-frame3"> 
+                                    <iframe class="youtube" src="https://www.youtube.com/embed/JwmGruvGt_I" title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <h4 class="music-name">Vaundy<br>『しわあわせ』</h4>
+                                    <p class="music-text">サビの盛り上がりが半端ない。。いや、、すごい。</p>
+                                </div>
+                            </li>
+                        </ul>                    
+                    </div>
+
             </section>
 
-            <section class="hobby">
-                <h2 class="section-title">HOBBYs</h2>
-                <ul class="hobby-list">
-                    <li class="hobby-list-item">
-                        <img src="images/hobby/piano.jpg">
-                        <div class="hobby-list-text-all">
-                            <h4 class="hobby-list-text1">MUSICs</h4>
-                            <div class="hobby-list-text2">
-                                小学校２年生からピアノを習い始めました。
-                                当時は嫌で何度も辞めたいと言っていましたが、今となっては
-                                ピアノが弾けることによって音楽を楽しむ幅が広がったと思います。
-                                最近は電子ドラムを買おうか悩んでいます。
-                            </div>
-                        </div>
-                    </li>
-                    <li class="hobby-list-item">
-                        <img src="images/hobby/movie2.jpg">
-                        <div class="hobby-list-text-all">
-                            <h4 class="hobby-list-text1">MOVIEs</h4>
-                            <div class="hobby-list-text2">
-                                配信の映画やアニメをよく観ます。
-                                好きな映画は『インターステラー』、『La La Land』、『キセキ～あの日のソビト～』など。
-                                アニメは『転スラ』と『SPY×FAMILY』が特に好きです。
-                                NETFLIXで韓国ドラマもいくつか観て、特に『愛の不時着』や『社内お見合い』観た後はすごく恋愛したくなりました。( ´∀｀ )
-                            </div>
-                        </div>
-                    </li>
-                    <li class="hobby-list-item">
-                        <img src="images/hobby/nissan-gtr.jpg">
-                        <div class="hobby-list-text-all">
-                            <h4 class="hobby-list-text1">CARs</h4>
-                            <div class="hobby-list-text2">
-                                小さいころからスーパーカーが好きで、小学生のころからR35GTRに乗りたいという夢があり、
-                                それに向かって勉強や受験を頑張ってきました。今はそれ以前に将来に不安を感じていて、英語を勉強してます。
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <section class="movies">
+                <div class="text-all">
+                    <h4 class="section-title">MOVIES/ANIMES</h4>
+                    <p class="text">
+                        好きな映画は『インターステラー』、『La La Land』、『キセキ～あの日のソビト～』など。
+                        アニメは『SPY×FAMILY』と『からかい上手の高木さん』が特に好きです。
+                        また、韓国ドラマの『愛の不時着』や『社内お見合い』を観た後はすごく恋愛したくなりました。( ´∀｀ )
+                    </p>
+                </div>
+                <iframe src="https://www.amazon.co.jp/gp/video/detail/B00URGVEN4/ref=atv_dp_share_cu_r"></iframe>
             </section>
 
-            <section class="career">
-                <h2 class="section-title">CAREER</h2>
-                <div class="career-list-all">
-                    <ul class="career-list">
-                        <li class="career-list-item"><div class="career-list-item1">18歳：川越高校卒業・東工大<span>不合格</span></div></li>
-                        <li class="career-list-item"><div class="career-list-item2">19歳：浪人</div></li>
-                        <li class="career-list-item"><div class="career-list-item3">20歳：東京工業大学 生命理工学院 <span>入学</span></div></li>
-                        <li class="career-list-item"><div class="career-list-item4">21歳：東京工業大学 生命理工学院 生命理工学系 在籍中</div></li>
-                    </ul>
+            <section class="cars">
+                <div class="text-all">
+                    <h4 class="section-title">CARS</h4>
+                    <p class="text">
+                        スーパーカーが好きです。特にR35GTRに乗るという夢を叶えるために勉強や受験を頑張ってきました。今は夢に一歩ずつ近づいていると感じています。
+                    </p>
                 </div>
-                <div class="triangle-left"></div>
             </section>
 
         </main>
@@ -167,7 +120,13 @@
             </nav>
             <div class="footer-text">Created By Doratanuki</div>
         </footer>
-
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="JS/openbtn.js"></script>
+        <script src="JS/profile_loading.js"></script>
+        <script src="JS/profile.js"></script>
+        <script src="JS/slick.min.js"></script>
+        <script src="JS/slick_common.js"></script>
     </body>
     
 </html>
