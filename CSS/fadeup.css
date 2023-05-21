@@ -4,6 +4,7 @@
     animation-fill-mode:forwards;
     opacity: 0;
 }
+
 @keyframes fadeUpAnime{
 from {
     opacity: 0;

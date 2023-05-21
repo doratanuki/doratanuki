@@ -1,22 +1,52 @@
-main{
+body{
     background-color: #ccc;
-    font-family: sans-serif;
+}
+main{
+    color: white;
+    font-family: serif;
+    padding:  0 20px;
 }
 
 .open-menu{
     background-color: #ccc;
 }
 
-.section-title{
-    margin:0px 30px;
-    padding: 10px 0px ;
-    border-bottom: 2px solid #ccc ;
-    border-left: 10px solid white;
-    /*フォント*/
-    color: rgb(255, 255, 255);
-    text-align: center;
-    letter-spacing: 2px;
+section{
+    margin: 10px 0;
+    background-color: #333;
 }
+
+.text-all{
+    padding: 20px 0;
+    background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-title{
+    width: fit-content;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0 1rem;
+    background-color: #00000082;
+    color: white;
+    border-left: 5px solid white;
+    border-bottom: 2px solid white;
+}
+
+.text{
+    width: calc(90% - 2rem);
+    padding: 0 1rem;
+    margin: 20px auto 0;
+    text-align: left;
+    /*FONT*/
+    font-size: 16px;
+    color: black;
+    background-color: #ccc;
+    
+} 
+
 
 @media screen and (max-width:480px) {
     .openbtn span{
@@ -25,488 +55,127 @@ main{
     .openbtn span:nth-of-type(3)::after {
         color: #666;
     }
-    main{
-        padding: 20px 10px;
-    }
     section{
         padding: 10px;
     }
     .section-title{
-        font-size: 25px;
-        margin: 0 30px;
-        padding: 0 0 5px;
+        font-size: 22px;
     }
+
 }
 @media screen and (min-width:481px) and (max-width:1024px) {
-    main{
-        padding: 20px 40px;
-    }
-    section{
-        padding: 20px;
-    }
-    .section-title{
-        font-size: 30px;
-        margin: 0 30px;
-        padding: 0 0 10px;
-    }
+
 }
 @media screen and (min-width:1025px) {
-    main{
-        padding: 20px 10%;
-    }
-    section{
-        padding: 20px;
-    }
-    .section-title{
-        font-size: 30px;
-        margin: 0 200px;
-        padding: 0 0 10px;
-    }
-}
 
-/*=========================================
-                プロフィール
-===========================================*/
-/*プロフィール全体*/
-.profile{
-    position: relative;
-    background-color: black;
-}
-
-/*プロフィールテキスト全体*/
-.profile-text{
-    color: white;
-    border-left: 2px solid #ccc;
-}
-
-.profile-text h3{
-    letter-spacing: 1px;
-    font-weight: 500;
-    margin: 0;
-}
-
-/*三角形*/
-.triangle-right{
-    /*位置*/
-    position: absolute;
-    right:10px;
-    bottom: 10px;
-    /*図形作成*/
-    width: 0px;
-    height: 0px;
-    border-bottom: 80px solid white;
-    border-left: 80px solid transparent;
-}
-
-/*====================
-        ~480px
-======================*/
-@media screen and (max-width:480px) {
-    /*プロフィール写真*/
-    .profile img{
-        width:200px;
-        height: 200px;
-        /*配置*/
-        display: block;
-        margin:20px auto;
-    }
-    /*テキスト全体*/
-    .profile-text{
-        margin: 10px 20px 0px 20px;
-        padding-left: 10px;
-    }
-    /*名前*/
-    .profile-text h3{
-        font-size: 25px;
-    }
-
-    /*自己紹介*/
-    .profile-text p{
-        font-size: 16px;
-        margin-top: 10px;
-    }
-    /*三角形*/
-    .triangle-right{
-        /*位置*/
-        position: absolute;
-        right:10px;
-        bottom: 10px;
-        /*図形作成*/
-        width: 0px;
-        height: 0px;
-        border-bottom: 50px solid white;
-        border-left: 50px solid transparent;
-    }
-}
-/*====================
-    481px ~ 1024px
-======================*/
-@media screen and (min-width:481px) and (max-width:1024px){
-    /*プロフィール写真*/
-    .profile img{
-        width:200px;
-        height: 200px;
-        /*配置*/
-        display: block;
-        margin:20px auto;
-    }
-    /*テキスト全体*/
-    .profile-text{
-        margin: 20px 20px;
-        padding-left: 30px;
-    }
-    /*名前*/
-    .profile-text h3{
-        font-size: 30px;
-    }
-
-    /*自己紹介*/
-    .profile-text p{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-}
-/*====================
-        1025px~
-======================*/
-@media screen and (min-width:1025px) {
-    /*プロフィール写真＋テキスト*/
-    .profile-img-text{
-        display: flex;
-    }
-
-    /*プロフィール写真*/
-    .profile img{
-        width:200px;
-        height: 200px;
-        margin: auto 0 auto 30px;
-    }
-    /*テキスト全体*/
-    .profile-text{
-        margin: 30px 50px;
-        padding-left: 50px;
-    }
-    /*名前*/
-    .profile-text h3{
-        font-size: 40px;
-    }
-
-    /*自己紹介*/
-    .profile-text p{
-        font-size: 20px;
-        margin-top: 20px;
-    }
 }
 
 /*=========================================
                     音楽
 ===========================================*/
-/*セクション全体*/
-.my-favorite-music{
-    background-color: #333;
-    margin-top: 20px;
+.musics .text-all{
+    background-image: url(../../images/hobby/piano.jpg);
+}
+
+/*RECCOMEND*/
+.reccomend{
+    background-color: rgb(33, 49, 30);
+
+}
+
+.reccomend h3{
+    width: fit-content;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto 0;
+    padding: 20px 50px 0 50px;
+    border-bottom: 2px solid #ccc;
 }
 
 .music-frame{
     padding: 10px;
+    color: white;
 }
 
-/*埋め込み動画*/
 .youtube{
     display: block;
     margin: auto;
     margin-top: 20px;
 }
 
-/*曲名*/
+
 .music-name{
     font-weight: 550;
-    color: rgb(255, 255, 255);
-    /*配置*/
     text-align: center;
 }
 
-/*テキスト*/
 .music-text{
-    /*フォント*/
-    color: white;
-    /*位置*/
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 @media screen and (max-width:480px) {
     .youtube{
-        width: 100%;
+        width: 85%;
+        aspect-ratio: 3/2;
     }
     .music-name{
         /*フォント*/
-        font-size: 20px;
-        color: rgb(255, 255, 255);
+        font-size: 18px;
         /*配置*/
-        text-align: left;
+        text-align: center;
         padding: 10px;
     }
     /*テキスト*/
     .music-text{
-        font-size: 15px;
+        font-size: 14px;
         text-align: left;
     }
 }
 @media screen and (min-width:481px) and (max-width:1024px) {
     .youtube{
-        width: 80%;
-        height: 400px;
+        width: 400px;
+        aspect-ratio: 3/2;
     }
     .music-name{
         /*フォント*/
-        font-size: 25px;
+        font-size: 22px;
         /*配置*/
         text-align: center;
         padding: 20px 0;
     }
     /*テキスト*/
     .music-text{
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
 }
 @media screen and (min-width:1025px) {
     .youtube{
-        width: 70%;
-        height: 500px;
+        width: 500px;
+        aspect-ratio: 3/2;
     }
     .music-name{
         /*フォント*/
-        font-size: 30px;
+        font-size: 26px;
         /*配置*/
         text-align: center;
         padding: 20px;
     }
     /*テキスト*/
     .music-text{
-        font-size: 20px;
-        text-align: center;
-    }
-}
-
-/*=========================================
-                    趣味
-===========================================*/
-.hobby{
-    background-color: #000;
-    margin-top: 20px;
-}
-
-.hobby-list{
-    display: flex;
-    color: white;
-}
-
-/*リストの大枠*/
-.hobby-list-item{
-    list-style: none;
-    margin-bottom:20px ;
-}
-
-/*写真*/
-.hobby-list-item img{
-    /*大きさ*/
-    aspect-ratio: 1.618/1;
-    /*配置*/
-    display: block;
-    margin: auto;
-}
-/*タイトル*/
-.hobby-list-text1{
-    text-align: center;
-    font-weight: 450;
-    letter-spacing: 1px;
-
-}
-
-
-
-@media screen and (max-width:480px) {
-    .hobby-list{
-        flex-direction: column;
-        margin: 0;
-        padding: 10px;
-    }
-    .hobby-list-item img{
-        width: 95%;
-    }
-    /*タイトル*/
-    .hobby-list-text1{
-        font-size: 22px;
-        margin: 10px 0px;
-    }
-    /*文章*/
-    .hobby-list-text2{
-        text-align: left;
         font-size: 16px;
-        /*配置*/
-        width: 95%;
-        margin: auto;
-    }
-}
-@media screen and (min-width:481px) and (max-width:1024px) {
-    .hobby-list{
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px;
-    }
-    .hobby-list-item img{
-        width: 70%;
-    }
-    /*テキスト*/
-    .hobby-list-text-all{
         text-align: center;
-        font-size: 18px;
-
     }
-    /*タイトル*/
-    .hobby-list-text1{
-        font-size: 25px;
-    }
-    /*文章*/
-    .hobby-list-text2{
-        /*配置*/
-        width: 90%;
-        margin: auto;
-    }
-}
-@media screen and (min-width:1025px) {
-    .hobby-list{
-        margin: 0;
-        padding: 20px;
-    }
-    .hobby-list-item{
-        width: 33.3%;
-    }
-    /*写真*/
-    .hobby-list-item img{
-        width: 90%;
-    }
-    /*テキスト全体*/
-    .hobby-list-text-all{
-        font-size: 20px;
-    }
-    /*テキストタイトル*/
-    .hobby-list-text1{
-        font-size: 25px;
-    }
-
-    /*テキスト本文*/
-    .hobby-list-text2{
-        /*配置*/
-        text-align:left;
-        width: 90%;
-        margin: auto;
-    }
-}
-/*=========================================
-                    経歴
-===========================================*/
-.career{
-    position: relative;
-    background-color: #333;
-    margin-top: 20px;
 }
 
-.career-list{
-    /*配列*/
-    display: flex;
-    flex-direction: column;
-    /*フォント*/
-    list-style: none;
-    color: white;
-}
-@media screen and (max-width:480px) {
-    .career-list{
-        font-size: 13px;
-        /*配置*/
-        padding: 10px 0px 10px 20px;
-        margin:10px 20px 0px 10px;
-        /*枠線*/
-        border-left: 2px solid #ccc;
-    }
-    
-    .career-list-item{
-        /*枠の上下マージン*/
-        margin: 5px 0px;
-        /*枠線*/
-        border-left: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding-left:10px;
-    }
-}
-@media screen and (min-width:481px) and (max-width:1024px) {
-    .career-list{
-        font-size: 18px;
-        /*配置*/
-        padding: 10px 0px 10px 20px;
-        margin:10px 40px 0px 40px;
-        /*枠線*/
-        border-left: 2px solid #ccc;
-    }
-    
-    .career-list-item{
-        /*枠の上下マージン*/
-        margin: 10px 0px;
-        /*枠線*/
-        border-left: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding-left:10px;
-        padding-top: 10px;
-        margin-left: 0px;
-    }
-}
-@media screen and (min-width:1025px) {
-    .career-list{
-        font-size: 20px;
-        /*配置*/
-        padding: 30px;
-        margin:auto;
-    }
-    
-    .career-list-item1,.career-list-item2,.career-list-item3,.career-list-item4{
-        /*枠の上下マージン*/
-        margin: 10px 0px;
-        /*枠線*/
-        border-left: 10px solid #CCC;
-        border-bottom: 2px solid  #ccc;
-        padding-left:20px;
-        padding-top: 10px;
-        margin-left: 0px;
-    }
-    /*リスト1*/
-    .career-list-item2{
-        margin-left: 0px;
-    }
-    
-    /*リスト2*/
-    .career-list-item2{
-        margin-left: 130px;
-    }
-    /*リスト3*/
-    .career-list-item3{
-        margin-left: 260px;
-    }
-    /*リスト4*/
-    .career-list-item4{
-        margin-left: 390px;
-    }
+/*=============================================*/
+.movies .text-all{
+    background-image: url(../../images/hobby/movie2.jpg);
 
-    /*三角形*/
-    .triangle-left{
-        /*位置*/
-        position: absolute;
-        left:50px;
-        bottom: 50px;
-        /*図形作成*/
-        width: 0px;
-        height: 0px;
-        border-bottom: 120px solid #ededed;
-        border-right: 120px solid transparent;
-    }
+}
+
+/*================================================*/
+.cars .text-all{
+    background-image: url(../../images/hobby/nissan-gtr.jpg);
+
 }

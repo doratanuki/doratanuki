@@ -1,5 +1,8 @@
 body{
+    background-color: #ccc;
+    font-family: serif;
     margin: 0;
+    padding: 0;
 }
 
 header{
@@ -9,7 +12,6 @@ header{
     height: 100vh;
     background-repeat: no-repeat;
 }
-
 
 /*===============================================
                     ~480px
@@ -177,3 +179,4 @@ header{
     }
 
 }
+

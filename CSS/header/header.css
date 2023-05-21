@@ -12,6 +12,7 @@ header{
 
 .header-title{
     /*フォント・サイズなど*/
+    font-family: serif;
     color: black;
     font-weight: bold;
     /*配置*/
