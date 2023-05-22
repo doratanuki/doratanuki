@@ -11,6 +11,11 @@ main{
     background-color: #ccc;
 }
 
+.title{
+    text-align: center;
+    color: #333;
+}
+
 section{
     margin: 10px 0;
     background-color: #333;
